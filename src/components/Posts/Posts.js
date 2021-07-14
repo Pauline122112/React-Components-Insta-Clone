@@ -15,7 +15,8 @@ const Posts = (props) => {
     {posts.map(post => 
     <Post 
     key={post.id} 
-    post={post}/>)}
+    post={post}
+    likePost={likePost}/>)}
     
 
           
