@@ -7,10 +7,18 @@ const Comments = props => {
   const { comments } = props;
 
   return (
-    <div>
-      {/* map through the comments prop and render a Comment for every piece of data */}
-    </div>
-  );
-};
+    <div className = 'comment-text'>
+      {
+        comments.map(comment =>
+          <Comment
+          key={comment.id}
+          comment={comment}/>
+          )
+      }
+      </div>
+  )
+}
+
+
 
 export default Comments;
